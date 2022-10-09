@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.colorCabecera{
+    background-image: linear-gradient(to right, #ffffff, #e7e7e7, #cfcfcf, #b8b8b8, #a1a1a1, #8f8f8f, #7d7d7d, #6c6c6c, #5b5b5b, #4b4b4b, #3b3b3b, #2c2c2c);
+}
+
+.nav-item{
+    text-decoration: none;
+    text-decoration-color: gold;
+}
+
+.logo{
+    width: 30%;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0vh;   
+    margin-right: 0%;
+    color: gold;
+    font-size: 50px;
+    text-shadow: 1px 2px 2px rgb(112, 112, 112), 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(238, 255, 0);
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0vh;
+    color: gold;
+    font-size: 25px;
+    text-shadow: 1px 2px 2px rgb(112, 112, 112), 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(238, 255, 0);
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background-image: url(../assets/src/Imagendefondo4.jpg);
+    background-size: auto;
+    background-repeat: repeat;
+}
+
+.galeria img:hover{
+    transform: scale(1.15);
+    width: 100%;
+    background-color: gold !important;
+    padding: 1px;
+}
+
+footer{
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #ffffff, #e7e7e7, #cfcfcf, #b8b8b8, #a1a1a1, #8f8f8f, #7d7d7d, #6c6c6c, #5b5b5b, #4b4b4b, #3b3b3b, #2c2c2c);
+    position: absolute;
+}
+
+.links a:hover{
+    color: gold !important;  
+}
+
+.links{
+color: gold !important;
+font-size: 25px;
+text-shadow: 1px 2px 2px rgb(112, 112, 112), 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(238, 255, 0);
+}
+
+.row__footer{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
+
