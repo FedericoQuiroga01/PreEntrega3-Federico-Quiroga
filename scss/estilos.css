@@ -16,8 +16,7 @@ header .colorCabecera {
 }
 header .nav-item {
   text-decoration: none;
-  -webkit-text-decoration-color: gold;
-          text-decoration-color: gold;
+  color: gold;
 }
 header h1 {
   display: flex;
@@ -48,13 +47,26 @@ header .links a:hover {
   color: gold !important;
 }
 header .links {
-  color: gold !important;
+  color: rgb(0, 0, 0) !important;
   font-size: 25px;
   text-shadow: 1px 2px 2px rgb(112, 112, 112), 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(238, 255, 0);
 }
 
 /*Finaliza scss del header*/
 /*Inicia scss del Main*/
+.container-texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5px;
+  color: #a70000;
+  font-size: 90px;
+  text-shadow: 1px 2px 2px rgb(255, 255, 255), 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
 main .galeria img:hover {
   transform: scale(1.15);
   width: 100%;
@@ -72,11 +84,83 @@ main .galeria img:hover {
 }
 
 /*Finaliza scss del Main*/
+.container-formulario {
+  width: 450px;
+  margin: auto;
+  background-image: linear-gradient(to right, #4e4e4e, #595959, #646464, #6f6f6f, #7b7b7b, #848484, #8c8c8c, #959595, #9c9c9c, #a4a4a4, #ababab, #b3b3b3);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+h3 {
+  color: gold;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: Verdana;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 15px;
+  border: none;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#boton {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: gold;
+  padding: 20px;
+  font-size: 20px;
+  font-family: Verdana;
+}
+
+#boton:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
+.container-mapa {
+  background-image: linear-gradient(to right, #4e4e4e, #595959, #646464, #6f6f6f, #7b7b7b, #848484, #8c8c8c, #959595, #9c9c9c, #a4a4a4, #ababab, #b3b3b3);
+  width: 100%;
+  margin: auto;
+  padding: 0px;
+  box-sizing: border-box;
+  margin-top: 0px;
+  border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+  .container-mapa {
+    width: auto;
+  }
+}
+h4 {
+  color: #a70000;
+  font-size: 30px;
+}
+
 /*Inicia scss del Footer*/
 footer {
-  margin-top: 30px;
+  bottom: 0%;
+  width: 100%;
+  margin-top: 60px;
   background-image: linear-gradient(to right, #ffffff, #e7e7e7, #cfcfcf, #b8b8b8, #a1a1a1, #8f8f8f, #7d7d7d, #6c6c6c, #5b5b5b, #4b4b4b, #3b3b3b, #2c2c2c);
-  position: absolute;
 }
 footer .logorrss {
   width: 30%;
@@ -86,7 +170,7 @@ footer h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 0vh;
+  padding-top: 40px;
   color: gold;
   font-size: 25px;
   text-shadow: 1px 2px 2px rgb(112, 112, 112), 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(238, 255, 0);
